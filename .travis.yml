@@ -6,3 +6,4 @@ os: linux
 
 script:
   - chmod u+x ./charcount.py
+  - python charcount.py
