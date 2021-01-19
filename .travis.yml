@@ -1,8 +1,8 @@
+---
+language: python
+sudo: required
+dist: xenial
 os: linux
-dist: focal
-      
-  - language: python
-    python:
-      - "2.7"
-    script:
-      - python charcount.py
+
+script:
+  - chmod u+x ./charcount.py
