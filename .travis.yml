@@ -4,7 +4,6 @@ dist: xenial
 
 jobs:
   include:
-  arch: ppc64le
   - language: cpp
     compiler: clang
     script:
@@ -15,7 +14,7 @@ jobs:
       - node
     script:
       - node hello.js
-       archt:
+       arch:
       - s390x
 
 
