@@ -1,7 +1,7 @@
 ---
 os: linux
-dist: focal
-arch: ppc64le
+dist: xenial
+os: linux
 
 jobs:
   include:
