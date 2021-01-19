@@ -89,8 +89,3 @@ matrix:
        script: skip
        env:
        - LIB_PATH="/usr/bin/shared/x86_64/v1"
-
-before_install: skip
-install: skip
-script: skip
-after_success: skip
