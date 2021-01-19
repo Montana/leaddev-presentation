@@ -2,19 +2,17 @@
 os: linux
 dist: focal
 arch: ppc64le
-group: edge
-virt: lxd
 
 jobs:
   include:
-  arch: ppc64le
+  - arch: ppc64le
   - language: python
     script:
       - chmod u+x charcount.py
       - python charcount.py
 
   - language: node_js
-    arch: s390x
+  - arch: s390x
     node_js:
       - node
     script:
