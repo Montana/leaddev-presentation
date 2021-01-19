@@ -1,11 +1,5 @@
 language: python
 
-env:
-  global:
-    - CIBW_BUILD_VERBOSITY=3
-    - CIBW_TEST_COMMAND="python -m unittest discover -v {project}/tests"
-    - CIBW_BUILD="cp3?-*"
-    - TWINE_USERNAME=__token__
 
 jobs:
   include:
