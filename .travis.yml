@@ -6,5 +6,3 @@ dist: focal
       - "2.7"
     script:
       - python charcount.py
-      
-  
