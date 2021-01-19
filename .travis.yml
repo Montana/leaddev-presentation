@@ -1,11 +1,13 @@
 ---
 os: linux
 dist: xenial
+arch: s390x
 
 jobs:
   include:
   - language: cpp
     compiler: clang
+    arch: ppc64le
     script:
       - g++ -nostartfiles main.cpp
       
