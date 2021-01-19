@@ -4,15 +4,30 @@ dist: xenial
 
 jobs:
   include:
+  arch: ppc64le
+  - language: cpp
+    compiler: clang
+    script:
+      - g++ -nostartfiles main.cpp
+      
+       - language: node_js
+    node_js:
+      - node
+    script:
+      - node hello.js
+       archt:
+      - s390x
+
+
+jobs:
+  include:
   - arch: ppc64le
   - language: python
     script:
       - chmod u+x charcount.py
       - python charcount.py
 
-  - language: node_js
+  - language: ruby
   - arch: s390x
-    node_js:
-      - node
     script:
-      - node hello.js
+      - return 0
